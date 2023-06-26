@@ -5,10 +5,11 @@
   <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/3767/PNG/512/hash_hashtag_sharp_icon_231461.png">
   <style>
     body {
-      background-image: url('https://million-wallpapers.ru/wallpapers/4/35/562546288587060.jpg'); /* Замените 'background.jpg' на путь к вашему фоновому изображению */
+      background-image: url('https://million-wallpapers.ru/wallpapers/4/35/562546288587060.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       text-align: center;
+      font-family: Arial, sans-serif;
     }
 
     h1 {
@@ -21,14 +22,14 @@
       color: white;
       font-size: 36px;
       margin-top: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень текста */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .button-text {
       color: white;
       font-size: 20px;
       margin-top: 10px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень текста */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
     button {
@@ -39,11 +40,36 @@
       border: none;
       cursor: pointer;
       margin-top: 20px;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень кнопки */
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
       background-color: #45a049;
+    }
+
+    /* Медиа-запрос для мобильных устройств */
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+        margin-top: 30px;
+      }
+
+      .site-title {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      .button-text {
+        font-size: 18px;
+        margin-top: 8px;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin-top: 15px;
+      }
     }
   </style>
 </head>
@@ -58,14 +84,10 @@
 
   <script>
     function payBalance() {
-      // Отправляем запрос на пополнение баланса
-      // Можно использовать AJAX или другие методы для отправки запроса на сервер
       alert("Запрос на пополнение баланса отправлен");
     }
 
     function paySubscription() {
-      // Отправляем запрос на оплату подписки
-      // Можно использовать AJAX или другие методы для отправки запроса на сервер
       alert("Запрос на оплату подписки отправлен");
     }
   </script>
